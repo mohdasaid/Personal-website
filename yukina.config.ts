@@ -2,11 +2,11 @@ import I18nKeys from "./src/locales/keys";
 import type { Configuration } from "./src/types/config";
 
 const YukinaConfig: Configuration = {
-  title: "Yukina",
-  subTitle: "Yukina Template Demo Site",
-  brandTitle: "Yukina",
+  title: "Muhammad Said",
+  subTitle: "Welcome my personal space on the interweb",
+  brandTitle: "Mohdasaid",
 
-  description: "Demo Site",
+  description: "Personal Website",
 
   site: "https://yukina-blog.vercel.app",
 
@@ -31,7 +31,7 @@ const YukinaConfig: Configuration = {
     },
   ],
 
-  username: "WhitePaper 白芷",
+  username: "Mohdasaid",
   sign: "Ad Astra Per Aspera.",
   avatarUrl: "https://s2.loli.net/2025/01/25/FPpTrQSezM8ivbl.webp",
   socialLinks: [
@@ -64,7 +64,7 @@ const YukinaConfig: Configuration = {
     "https://s2.loli.net/2025/01/25/JjpLOW8VSmufzlA.webp",
   ],
 
-  slugMode: "HASH", // 'RAW' | 'HASH'
+  slugMode: "RAW", // 'RAW' | 'HASH'
 
   license: {
     name: "CC BY-NC-SA 4.0",
