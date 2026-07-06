@@ -1,19 +1,29 @@
 /**
- * Formats a Date object to a string based on the specified locales and options.
+ * Format a Date (or date string / timestamp) for display.
  *
- * @param date - The Date object to format.
- * @param locales - A string representing the locales to use; defaults to 'en'.
- * @param options - An Intl.DateTimeFormatOptions object defining formatting behavior; defaults to an object with year, month, and day.
- * @returns A formatted date string with slashes replaced by ' - '.
+ * @param date - Input date
+ * @param opts - Intl.DateTimeFormat options (defaults to full: e.g. "January 1, 2025")
+ * @returns Formatted string
  */
 export function formatDate(
-  date: Date,
-  locales: string = "en",
-  options: Intl.DateTimeFormatOptions = {
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  },
-) {
-  return date.toLocaleDateString(locales, options).replaceAll("/", " - ");
+  date: Date | string | number,
+  opts: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' },
+): string {
+  const d = date instanceof Date ? date : new Date(date);
+  return d.toLocaleDateString('en-US', opts);
+}
+
+/**
+ * Format a date as ISO 8601 (for datetime attributes).
+ */
+export function isoDate(date: Date | string | number): string {
+  const d = date instanceof Date ? date : new Date(date);
+  return d.toISOString();
+}
+
+/**
+ * Format a date as a short label, e.g. "Jan 2025".
+ */
+export function shortDate(date: Date | string | number): string {
+  return formatDate(date, { year: 'numeric', month: 'short' });
 }
