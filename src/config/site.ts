@@ -32,7 +32,7 @@ export const site = {
   // ─── Identity ──────────────────────────────────────────────────────────────
 
   /** Site title. Shown in the browser tab and navbar. */
-  title: 'Albert Einstein',
+  title: 'Muhammad Abdullahi Said',
 
   /** Site description. Used in meta tags. */
   description: 'A simple, clean, and responsive Astro template for academics. Powered by as-folio.',
@@ -44,10 +44,10 @@ export const site = {
 
   author: {
     /** Full name shown in navbar, about page heading, and footer. */
-    name: 'Albert Einstein',
+    name: 'Muhammad Abdullahi Said',
 
     /** Short email address (used in social links). */
-    email: 'einstein@example.com',
+    email: 'mohdasaid10@gmail.com',
 
     /** Path to profile photo. Place image in public/assets/img/. */
     avatar: '/assets/img/prof_pic.jpg',
@@ -56,7 +56,7 @@ export const site = {
      * Subtitle below your name on the about page.
      * HTML is supported.
      */
-    subtitle: `Theoretical Physicist
+    subtitle: `AI Safety Researcher
       &nbsp;·&nbsp;
       <a href="https://en.wikipedia.org/wiki/Institute_for_Advanced_Study">Institute for Advanced Study</a>,
       Princeton`,
@@ -65,9 +65,9 @@ export const site = {
      * Address block below profile photo.
      * HTML is supported.
      */
-    moreInfo: `<p>Institute for Advanced Study</p>
-      <p>Einstein Drive</p>
-      <p>Princeton, NJ 08540</p>`,
+    moreInfo: `<p>6, Melrose Road</p>
+      <p>Muizenberg</p>
+      <p>Cape Town South Africa</p>`,
   },
 
   // ─── Social links ──────────────────────────────────────────────────────────
@@ -79,13 +79,13 @@ export const site = {
   //   bluesky_handle, medium_username, cv_pdf, rss_icon
 
   socials: {
-    email: 'einstein@example.com',
+    email: 'mohdasaid10@gmail.com',
     x_username: undefined as string | undefined,
-    linkedin_username: undefined as string | undefined,
-    github_username: undefined as string | undefined,
+    linkedin_username: 'muhammadasaid' as string,
+    github_username: 'mohdasaid' as string,
     gitlab_username: undefined as string | undefined,
     /** Google Scholar user ID — the part after user= in your Scholar URL */
-    scholar_userid: 'qc6CJjYAAAAJ',
+    scholar_userid: 'PunM7E0AAAAJ',
     orcid_id: undefined as string | undefined,
     /** Inspire HEP author ID */
     inspire_id: '1010907',
@@ -166,14 +166,14 @@ export const site = {
      */
     format: 'rendercv' as 'rendercv' | 'jsonresume',
     /** Path to CV PDF for the download button in public/assets/pdf/. */
-    pdfPath: '/assets/pdf/example_pdf.pdf',
+    pdfPath: '/assets/pdf/cv.pdf',
   },
 
   // ─── Blog ──────────────────────────────────────────────────────────────────
 
   blog: {
     /** Name shown in the blog page heading. */
-    name: 'as-folio',
+    name: 'Mohdasaid Blog',
     description: 'A simple, clean, and responsive Astro template for academics.',
     /** Number of posts per page. */
     postsPerPage: 5,
