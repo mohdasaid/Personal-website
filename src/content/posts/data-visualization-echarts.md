@@ -7,6 +7,7 @@ categories: [demo]
 toc: true
 relatedPosts: true
 echarts: true
+draft: true
 ---
 
 [Apache ECharts](https://echarts.apache.org/) is a production-grade charting library with rich

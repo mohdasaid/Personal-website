@@ -7,6 +7,7 @@ categories: [demo]
 toc: true
 relatedPosts: true
 code_diff: true
+draft: true
 ---
 
 The `code_diff: true` flag loads [Diff2Html](https://diff2html.xyz/), which renders unified diff

@@ -1,13 +1,7 @@
 github_users:
-  - torvalds
-  - dadangnh
+  - mohdasaid
 
 github_repos:
-  - dadangnh/as-folio
-  - torvalds/linux
-  - git/git
-  - python/cpython
-  - astro/astro
-  - tailwindlabs/tailwindcss
+  - mohdasaid/ML-at-Scale
 
 repo_description_lines_max: 2

@@ -35,7 +35,7 @@ export const site = {
   title: 'Muhammad Abdullahi Said',
 
   /** Site description. Used in meta tags. */
-  description: 'A simple, clean, and responsive Astro template for academics. Powered by as-folio.',
+  description: 'Muhammad Abdullahi Said personal website',
 
   /** Language code for the site. */
   lang: 'en',
@@ -50,16 +50,13 @@ export const site = {
     email: 'mohdasaid10@gmail.com',
 
     /** Path to profile photo. Place image in public/assets/img/. */
-    avatar: '/assets/img/prof_pic.jpg',
+    avatar: '/assets/img/muhammad.jpeg',
 
     /**
      * Subtitle below your name on the about page.
      * HTML is supported.
      */
-    subtitle: `AI Safety Researcher
-      &nbsp;·&nbsp;
-      <a href="https://en.wikipedia.org/wiki/Institute_for_Advanced_Study">Institute for Advanced Study</a>,
-      Princeton`,
+    subtitle: `AI Safety Researcher`,
 
     /**
      * Address block below profile photo.
@@ -97,7 +94,7 @@ export const site = {
     bluesky_handle: undefined as string | undefined,
     medium_username: undefined as string | undefined,
     /** Path to CV PDF in public/assets/pdf/ */
-    cv_pdf: '/assets/pdf/example_pdf.pdf',
+    cv_pdf: '/assets/pdf/cv.pdf',
     /** Show RSS icon in social links */
     rss_icon: true,
   },
@@ -126,8 +123,8 @@ export const site = {
       {
         label: 'more',
         children: [
-          { label: 'teaching', href: '/teaching/' },
-          { label: 'people', href: '/people/' },
+          // { label: 'teaching', href: '/teaching/' },
+          // { label: 'people', href: '/people/' },
           { label: 'books', href: '/books/' },
         ],
       },
@@ -153,7 +150,7 @@ export const site = {
      * 'normal'  — sits at the natural bottom of page content (only visible when scrolled down)
      * 'hidden'  — footer is not rendered at all
      */
-    position: 'sticky' as 'sticky' | 'normal' | 'hidden',
+    position: 'normal' as 'sticky' | 'normal' | 'hidden',
   },
 
   // ─── CV page ───────────────────────────────────────────────────────────────
@@ -174,14 +171,15 @@ export const site = {
   blog: {
     /** Name shown in the blog page heading. */
     name: 'Mohdasaid Blog',
-    description: 'A simple, clean, and responsive Astro template for academics.',
+    description: '',
     /** Number of posts per page. */
     postsPerPage: 5,
     /**
      * Tags shown as badges on the blog listing page header.
      * Users can click them to filter posts by tag.
      */
-    displayTags: ['formatting', 'images', 'links', 'math', 'code', 'blockquotes'],
+    // displayTags: ['formatting', 'images', 'links', 'math', 'code', 'blockquotes'],
+    displayTags: ['ai', 'safety'],
     /** Categories shown as badges on the blog listing page header. */
     displayCategories: [] as string[],
     /**
@@ -322,16 +320,16 @@ export const site = {
 
   // ─── Teaching page ────────────────────────────────────────────────────────
 
-  teaching: {
-    /**
-     * Google Calendar ID for the "Upcoming Events" section.
-     * Set to a calendar address like 'user@gmail.com' to show the embed.
-     * Leave empty string to hide the calendar section entirely.
-     */
-    calendarId: 'test@gmail.com' as string,
-    /** Timezone for the Google Calendar embed (e.g., 'America/New_York'). */
-    timezone: 'America/New_York' as string,
-  },
+  // teaching: {
+  //   /**
+  //    * Google Calendar ID for the "Upcoming Events" section.
+  //    * Set to a calendar address like 'user@gmail.com' to show the embed.
+  //    * Leave empty string to hide the calendar section entirely.
+  //    */
+  //   calendarId: 'test@gmail.com' as string,
+  //   /** Timezone for the Google Calendar embed (e.g., 'America/New_York'). */
+  //   timezone: 'America/New_York' as string,
+  // },
 
   // ─── Publications ─────────────────────────────────────────────────────────
 
@@ -408,7 +406,7 @@ export const site = {
   pages: {
     projects: {
       /** Description shown below the "projects" heading on the projects page. */
-      description: 'A growing collection of your cool projects.',
+      description: 'A growing collection of my projects.',
     },
     teaching: {
       /** Description shown below the "teaching" heading on the teaching page. */

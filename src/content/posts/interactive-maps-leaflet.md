@@ -7,6 +7,7 @@ categories: [demo]
 toc: true
 relatedPosts: true
 map: true
+draft: true
 ---
 
 The `map: true` flag loads [Leaflet](https://leafletjs.com/) plus the OpenStreetMap tile layer.

@@ -7,6 +7,7 @@ categories: [demo]
 toc: true
 relatedPosts: true
 chart_js: true
+draft: true
 ---
 
 Enable [Chart.js](https://www.chartjs.org/) in any post with `chart_js: true` in your frontmatter.

@@ -6,6 +6,7 @@ description: Hidden posts are excluded from listings and RSS but are accessible 
 tags: [meta]
 categories: [tutorial]
 toc: false
+draft: true
 ---
 
 This post has `hidden: true` in its frontmatter.

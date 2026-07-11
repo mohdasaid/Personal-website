@@ -8,6 +8,7 @@ toc: true
 math: true
 relatedPosts: true
 plotly: true
+draft: true
 ---
 
 [Plotly.js](https://plotly.com/javascript/) produces publication-quality interactive figures with

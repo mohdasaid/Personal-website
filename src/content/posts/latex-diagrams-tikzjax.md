@@ -7,6 +7,7 @@ categories: [demo]
 toc: true
 math: true
 tikzjax: true
+draft: true
 ---
 
 The `tikzjax: true` flag loads [TikzJax](https://tikzjax.com/), which compiles TikZ code entirely
