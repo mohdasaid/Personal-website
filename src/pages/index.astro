@@ -125,21 +125,25 @@ const renderedAnnouncements = await Promise.all(
             <div class={site.latestPosts.scrollable ? 'scrollable-list' : ''}>
               <table style="width: 100%; border-collapse: collapse;">
                 <tbody>
-                  {allPosts.map((post) => (
-                    <tr style="border-bottom: 1px solid var(--global-divider-color);">
-                      <td style="padding: 0.5rem 1rem 0.5rem 0; white-space: nowrap; vertical-align: top; color: var(--global-text-color-light); font-size: 0.8rem;">
-                        {formatDate(post.data.date)}
-                      </td>
-                      <td style="padding: 0.5rem 0; font-size: 0.9rem;">
-                        <a
-                          href={`${site.base}/blog/${post.id}/`}
-                          style="color: var(--global-theme-color); text-decoration: none;"
-                        >
-                          {post.data.title}
-                        </a>
-                      </td>
-                    </tr>
-                  ))}
+                  {allPosts.filter((post) => !post.data.draft).length === 0
+                    ? 'No posts yet.'
+                    : allPosts
+                        .filter((post) => !post.data.draft)
+                        .map((post) => (
+                          <tr style="border-bottom: 1px solid var(--global-divider-color);">
+                            <td style="padding: 0.5rem 1rem 0.5rem 0; white-space: nowrap; vertical-align: top; color: var(--global-text-color-light); font-size: 0.8rem;">
+                              {formatDate(post.data.date)}
+                            </td>
+                            <td style="padding: 0.5rem 0; font-size: 0.9rem;">
+                              <a
+                                href={`${site.base}/blog/${post.id}/`}
+                                style="color: var(--global-theme-color); text-decoration: none;"
+                              >
+                                {post.data.title}
+                              </a>
+                            </td>
+                          </tr>
+                        ))}
                 </tbody>
               </table>
             </div>

@@ -118,16 +118,16 @@ export const site = {
       { label: 'blog', href: '/blog/' },
       { label: 'publications', href: '/publications/' },
       { label: 'projects', href: '/projects/' },
-      { label: 'repositories', href: '/repositories/' },
-      { label: 'cv', href: '/cv/' },
-      {
-        label: 'more',
-        children: [
-          // { label: 'teaching', href: '/teaching/' },
-          // { label: 'people', href: '/people/' },
-          { label: 'books', href: '/books/' },
-        ],
-      },
+      // { label: 'repositories', href: '/repositories/' },
+      { label: 'cv', href: '/assets/pdf/cv.pdf' },
+      // {
+      //   label: 'more',
+      //   children: [
+      //     // { label: 'teaching', href: '/teaching/' },
+      //     // { label: 'people', href: '/people/' },
+      //     { label: 'books', href: '/books/' },
+      //   ],
+      // },
     ] as NavItem[],
   },
 
