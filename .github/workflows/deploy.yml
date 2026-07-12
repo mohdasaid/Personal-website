@@ -1,14 +1,11 @@
 name: Deploy to GitHub Pages
-
 on:
   push:
     branches: [main]
   workflow_dispatch:
-
 concurrency:
   group: pages
   cancel-in-progress: false
-
 jobs:
   build:
     name: Build
@@ -17,17 +14,13 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-
       - name: Enable Corepack
         run: corepack enable
-
       - name: Install dependencies
         run: yarn install --immutable
-
       - name: Build site
         run: yarn build
         env:
@@ -38,7 +31,6 @@ jobs:
           # The fallbacks below are only for this template repository's own deployment.
           ASTRO_SITE: ${{ vars.ASTRO_SITE || 'https://dadangnh.github.io' }}
           ASTRO_BASE: ${{ vars.ASTRO_BASE || '/as-folio' }}
-
       - name: Commit updated citations.yml
         run: |
           git config user.name "github-actions[bot]"
@@ -50,11 +42,9 @@ jobs:
             git commit -m "chore: update citation counts [skip ci]"
             git push
           fi
-
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/
-
   deploy:
     name: Deploy
     needs: build
